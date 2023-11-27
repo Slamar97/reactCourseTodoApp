@@ -1,0 +1,88 @@
+:root {
+    --color-main-bg: #3498db;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: var(--color-main-bg);
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+}
+
+.container {
+    display: inline-block;
+    background: white;
+    padding: 32px 12px;
+    border-radius: 12px;
+    max-width: 800px;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.button {
+    background-color: var(--color-main-bg);
+    border: 0;
+    color: white;
+    width: 50px;
+    aspect-ratio: 1;
+    font-size: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buttonTask {
+    color: var(--color-main-bg);
+    background-color: transparent;
+    border: solid 1px currentColor;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.buttonTask:hover {
+    color: white;
+    background-color: var(--color-main-bg);
+}
+
+.element {
+    list-style-type: none;
+    border-top: 1px solid black;
+    margin-top: 16px;
+    padding-top: 16px;
+    min-width: 400px;
+    gap: 8px;
+
+}
+
+.item {
+    list-style-type: none;
+    /*display: flex;*/
+    align-items: center;
+    gap: 8px;
+    border-top: 1px solid black;
+    margin-top: 16px;
+    padding-top: 16px;
+    min-width: 400px;
+}
+
+.name {
+    width: 100%;
+}
+
+.done {
+    text-decoration: line-through;
+}
